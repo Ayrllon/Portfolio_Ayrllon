@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+}
+
+span {
+    pointer-events: none;
+}
+
+.sobre,
+.educacao {
+    margin-top: 10rem;
+}
+
+#eu,
+.perfil,
+.habi,
+.experiencias,
+.educacao,
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*nav-bar*/
+
+nav.menu-lateral {
+    width: 70px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #f07;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    overflow: hidden;
+}
+
+nav.menu-lateral:hover {
+    width: 300px;
+}
+
+.menu-lateral .expandir {
+    width: 300px;
+}
+
+nav.menu-lateral .txt-link span {
+    overflow: hidden;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+.icon_menu {
+    display: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.icon_menu>i {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style: none;
+}
+
+.item-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    border: none;
+    line-height: 40px;
+}
+
+.ativo {
+    background-color: #f07;
+}
+
+
+.item-menu a .txt-link {
+    margin-left: 20px;
+    transition: 1s;
+    opacity: 1;
+}
+
+.expandir .txt-link {
+    margin-left: 20px;
+    opacity: 1;
+}
+
+.item-menu a .icon>i {
+    font-size: 30px;
+    margin-left: 2px;
+}
+
+.item-menu {
+    transition: 0.5s;
+}
+
+
+
+.item-menu:hover {
+    background-color: #f07;
+}
+
+
+/*home*/
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../img/freepik__adjust__26453.jpeg");
+    width: 100%;
+    height: 100%;
+}
+
+.home span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #1d1d1d;
+    text-transform: uppercase;
+}
+
+.home h1 {
+    font-size: 75px;
+    color: #fff;
+}
+
+.home p {
+    font-size: 25px;
+    color: #fff;
+}
+
+.home .mais-sobre a {
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #ccc;
+    border-radius: 2px;
+    padding: 25px 50px;
+    transition: 0.5s;
+}
+
+.home .mais-sobre a:hover {
+    transition: 0.5s;
+    border: 3px solid #f07;
+}
+
+
+.home .mais-sobre {
+    margin-top: 5rem;
+    text-decoration: none;
+}
+
+#icon-git {
+    position: relative;
+    top: 18rem;
+    cursor: pointer;
+}
+
+
+
+/*sobre*/
+
+.experiencias {
+    margin-top: 5rem;
+}
+
+
+
+
+#eu span {
+    color: #f07;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#eu h2,
+.experiencias h2 {
+    color: #888888;
+    font-size: 35px;
+}
+
+#eu img {
+    width: 100px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3rem;
+}
+
+.foto-desc {
+    font-size: 20px;
+    max-width: 700px;
+    line-height: 2rem;
+    color: #888888;
+    margin-bottom: 80px;
+}
+
+.foto-desc #text {
+    text-align: left;
+    padding-left: 10.4rem;
+}
+
+
+.perfil #title-perfil,
+.habi span {
+    color: #f07;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.perfil,
+.habi {
+    color: #888888;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+}
+
+
+.perfil span {
+    color: #1d1d1d;
+    font-size: 1.5rem;
+}
+
+.perfil p,
+.habi p {
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.habi {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.habi li {
+    list-style: disc;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #f07;
+    text-align: left;
+}
+
+
+/* experiencias*/
+.experiencias {
+    background-color: #ebebeb;
+    padding-top: 5rem;
+}
+
+.experiencias p {
+    max-width: 700px;
+}
+
+.experiencias h2 {
+    margin-bottom: 1rem;
+}
+
+.experiencias h3,
+.educacao h2,
+.portfolio h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    color: #f07;
+}
+
+#text-expe {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.trabalho {
+    display: flex;
+}
+
+.trabalho .line {
+    border: 1px solid #f07;
+}
+
+.experiencias ul,
+.educacao ul {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+.trabalhos,
+.estudo {
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.trabalhos img {
+    background-color: #1d1d1d;
+    width: 55px;
+    height: 55px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 3rem;
+}
+
+.impres-temp,
+.escola-curso-temp {
+    display: flex;
+    padding: 0 3rem;
+    align-items: center;
+}
+
+#zap {
+    padding-right: 3rem;
+}
+
+#aquarium {
+    margin-right: 2rem;
+}
+
+#big {
+    margin-right: 1.5rem;
+}
+
+
+.text-temp span {
+    font-size: 25px;
+    color: #202020;
+}
+
+.text-temp p {
+    color: #888888;
+}
+
+.text-descr-trabalho {
+    max-width: 400px;
+    border-left: 1px solid #f07;
+    padding-left: 15px;
+}
+
+/*educação*/
+
+.educacao {
+    display: flex;
+    justify-content: center;
+}
+
+.estudo i {
+    font-size: 30px;
+    color: #fff;
+    background-color: #1d1d1d;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+.estudo {
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.curso-temp span {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.text-descr-educacao h3 {
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.6rem;
+    font-size: 25px;
+    border-bottom: 2px solid #888888;
+}
+
+.text-descr-educacao p {
+    color: #202020;
+}
+
+.text-descr-educacao {
+    margin-left: 3rem;
+    border-left: 1px solid #f07;
+    padding: 15px;
+}
+
+.curso-temp p {
+    color: #888888;
+    font-size: 18px;
+}
+
+#icon-start {
+    margin-left: 9.3rem;
+}
+
+#icon-play {
+    margin-left: 8.7rem;
+}
+
+#icon-udemy {
+    margin-left: 9.3rem;
+}
+
+#icon-facul {
+    margin-left: 8.4rem;
+}
+
+
+/*Portfolio*/
+.portfolio {
+    margin-bottom: 20rem;
+}
+
+.portfolio img {
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+    gap: -15rem;
+    padding: 15px;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    transition: 0.5s;
+    background-color: #fff;
+}
+
+.portfolio img:hover {
+    border: 1px solid #f07;
+    transition: 0.5s;
+    transform: translate(-10px, -20px);
+}
+
+.portfolio ul {
+    columns: 2;
+}
+
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5rem;
+    background-color: #202020;
+    color: #fff;
+
+}
+
+.footer {
+    margin: 0 auto;
+    display: flex;
+    padding-top: 6rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.email_footer {
+    padding-right: 5rem;
+}
+
+
+/*responsivo 480px*/
+
+@media(max-width: 480px) {
+
+    /*menu lateral*/
+    .icon_menu{
+        display: block !important;
+    }
+    nav.menu-lateral {
+        position: fixed;
+        width: 110px !important;
+        height: 600px;
+        padding: 60px 0 40px 25px;
+        background-color: transparent;
+        box-shadow: 0 0 0 transparent;
+    }
+
+    
+    .menu-lateral .expandir {
+        width: 100px !important;
+        height: 50px !important;
+    }
+
+    nav.menu-lateral .icon>i {
+        overflow: hidden;
+    }
+
+    nav.menu-lateral.expandir {
+        height: 100px !important;
+    }
+
+    .icon_menu>i {
+        font-size: 25px;
+        background-color: #1d1d1d;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .icon>i {
+        font-size: 25px !important;
+        background-color: #f07;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+
+
+    .icon_menu {
+        padding-bottom: 17px;
+    }
+
+    .txt-link {
+        display: none;
+    }
+
+
+
+    /*home*/
+    .home span {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .home h1 {
+        text-align: center;
+        font-size: 50px;
+        max-width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .home p {
+        text-align: center;
+    }
+
+    .mais-sobre {
+        font-size: 20px;
+    }
+
+    #icon-git {
+        top: 9rem !important;
+    }
+
+
+
+
+    /*sobre*/
+    #text,
+    .perfil p,
+    .habi p{
+        max-width: 290px;
+    }
+    .foto-desc {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .foto-desc #text {
+        padding-top: 1rem;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    #eu h2,
+    .experiencias h2 {
+        font-size: 30px;
+    }
+
+    #eu img {
+        width: 100px;
+        border-radius: 50%;
+        float: left;
+        margin-right: 0 !important;
+        padding: 2rem 0;
+    }
+    
+
+    /*experiencias*/
+    .experiencias p,
+    .experiencias h2 {
+        max-width: 300px;
+    }
+
+    .experiencias h2 {
+        text-align: center;
+    }
+
+    .text-temp,
+    .trabalhos img {
+        margin-bottom: 1rem;
+    }
+
+    .impres-temp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-descr-trabalho {
+        border-left: none;
+        border-bottom: 1px solid #f07;
+        padding-bottom: 1rem;
+    }
+
+    .trabalhos {
+        display: block;
+        text-align: center;
+    }
+
+    .trabalhos img {
+        margin-left: 0;
+    }
+
+    #zap {
+        padding-right: 0;
+    }
+
+    #aquarium {
+        margin-right: 0;
+    }
+
+    #big {
+        margin-right: 0;
+    }
+
+
+
+    /*educação*/
+    .escola-curso-temp{
+        display: flex;
+        flex-direction: column
+    }
+    .text-descr-educacao{
+        margin-left: 0 !important;
+    }
+  
+
+    .curso-temp{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    #icon-start {
+        margin-left: 0;
+    }
+
+    #icon-play {
+        margin-left: 0;
+    }
+
+    #icon-udemy {
+        margin-left: 0;
+    }
+
+    #icon-facul {
+        margin-left: 0;
+    }
+
+
+    /*portfolio*/
+    .portfolio ul {
+        columns: 1;
+    }
+
+    #text {
+        text-align: center;
+    }
+
+    .portfolio li {
+        padding-bottom: 1rem;
+    }
+
+    .portfolio img {
+        max-width: 320px;
+        padding: 5px;
+    }
+
+    /*footer*/
+    .footer{
+        display: block !important;
+        align-items: start;
+    }
+
+    .email_footer {
+        padding-right: 0;
+        padding: 5px;
+    }
+    
+}
+
+
+/*responsivo 1360px*/
+@media(max-width: 1360px){
+    
+
+    nav.menu-lateral {
+        width: 65px;
+    }
+    .home span{
+        color: #fff;
+    }
+}
