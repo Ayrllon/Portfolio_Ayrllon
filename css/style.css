@@ -565,6 +565,7 @@ footer {
 
     .home p {
         text-align: center;
+        max-width: 350px;
     }
 
     .mais-sobre {
